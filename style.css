@@ -1,0 +1,397 @@
+body {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 18px;
+  color: #777;
+  line-height: 34px;
+  background: url("./knitted-netting.png");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+.container {
+  clear: both;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 20px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Georgia', Times, 'Times New Roman', serif;
+  color: #001aff;
+  font-weight: 700;
+}
+
+h1 {
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 49px;
+  border-bottom: 3px solid #ddd;
+}
+
+h2,
+h3 {
+  font-size: 22px;
+}
+
+
+
+
+#masthead {
+  position: fixed;
+  z-index: 99;
+  margin: 0 0 30px;
+  overflow: auto;
+  width: 100%;
+  color: #fff;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+}
+
+#logo {
+  width: 250px;
+  height: 90px;
+  float: left;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  text-align: center;
+  line-height: 90px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  text-decoration: none;
+  background: #001aff;
+}
+
+nav {
+  float: right;
+  margin-top: 25px;
+}
+
+nav a {
+  display: inline-block;
+  margin-left: 15px;
+  padding-left: 15px;
+  color: #999;
+  text-decoration: none;
+  line-height: 18px;
+  border-left: 1px solid #efefef;
+}
+
+nav a:first-child {
+  border-left: 0 none;
+}
+
+
+
+
+footer {
+  padding: 30px 0;
+  clear: both;
+  color: #fff;
+  color: #ccc;
+  font-size: 12px;
+  text-align: center;
+  background: #666;
+  border-top: 8px solid #001aff;
+}
+
+
+
+
+.sidebar {
+  padding: 30px;
+  width: 100%;
+
+  float: right;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+h3,
+.sidebar h2 {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  border-bottom: 2px solid #eee;
+}
+
+.social {
+  width: 62px;
+  height: 62px;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.social:last-child {
+  margin-right: 0;
+}
+
+
+
+#main-container {
+  padding-top: 130px;
+}
+
+.main-section {
+  padding: 30px;
+  margin: 0 0 40px 0;
+  width: 100%;
+
+  float: left;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+
+
+
+.work {
+  position: relative;
+  width: 274px;
+  overflow: auto;
+  float: left;
+  margin: 20px 0 25px;
+}
+
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+
+.work img {
+  width: 250px;
+  height: 250px;
+  border: 0 none;
+  opacity: .8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  margin-bottom: 0;
+  padding: 15px;
+  width: 250px;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 300;
+  background: #001aff;
+  border-bottom: 0;
+}
+
+.auth-image {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+  float: left;
+}
+
+
+
+
+#contact-form ul {
+  margin-bottom: 20px;
+}
+
+#contact-form li {
+  margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  padding: 10px 30px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  background: #001aff;
+  border: 0 none;
+}
+
+
+@media screen and (max-width: 980px) {
+  body {
+    position: static;
+  }
+
+  #masthead {
+    width: 980px;
+  }
+
+  #logo {
+    width: 250px;
+    margin-left: 50px;
+  }
+
+  nav {
+    margin-right: 100px;
+  }
+
+  .main-section {
+    width: 390px;
+    margin-left: 130px;
+  }
+
+  .sidebar {
+    float: left;
+    width: 270px;
+    margin-left: 35px;
+  }
+
+  .auth-image {
+    width: 100%;
+  }
+
+  .work {
+    width: 100%;
+  }
+
+  .work:nth-child(even) {
+    float: left;
+  }
+
+  footer {
+    width: 980px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  #logo {
+    position: static;
+    width: 256px;
+  }
+
+  nav {
+  
+    width: 420px;
+  }
+
+  .main-section {
+    position: static;
+    width: 685px;
+    margin-right: 35px;
+    margin-left: 35px;
+  }
+
+  .sidebar {
+    position: static;
+    width: 685px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 35px;
+  }
+
+  .auth-image {
+    position: static;
+    width: 50%;
+  }
+
+  .work {
+    width: 290px;
+  }
+
+  footer {
+    width: 768px;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+  body { 
+    position: static;
+   }
+
+   .container {
+    position: static;
+    width: 640px;
+    margin: 0;
+   }
+
+   #logo {
+    position: static;
+    width: 640px;
+    margin: 0;
+  }
+
+  nav {
+    position: static;
+    width: 640px;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    padding-left: 155px;
+    text-align: center;
+  }
+
+  nav a {
+    padding: 0px 40px;
+  }
+
+  .main-section {
+    position: static;
+    width: 550px;
+    margin: 35px;
+    margin-bottom: 0px;
+  }
+
+  .auth-image {
+    position: static;
+    width: 100%;
+  }
+
+  .sidebar {
+    position: static;
+    float: left;
+    width: 550px;
+    margin: 35px;
+  }
+
+  .work {
+    width: 100%;
+  }
+
+  footer {
+    width: 640px;
+  }
+  
+}
